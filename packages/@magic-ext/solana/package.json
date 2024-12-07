@@ -1,0 +1,39 @@
+{
+  "name": "@magic-ext/solana",
+  "version": "25.19.0",
+  "description": "magic solana extension",
+  "author": "Magic <team@magic.link> (https://magic.link/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magiclabs/magic-js"
+  },
+  "files": [
+    "dist"
+  ],
+  "target": "neutral",
+  "cdnGlobalName": "MagicSolanaExtension",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/index.d.ts",
+  "jsdelivr": "./dist/extension.js",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "import": "./dist/es/index.mjs",
+    "require": "./dist/cjs/index.js"
+  },
+  "externals": {
+    "include": [
+      "@magic-sdk/commons"
+    ]
+  },
+  "devDependencies": {
+    "@magic-sdk/commons": "^24.18.0"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.2"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.87.2"
+  }
+}

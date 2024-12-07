@@ -1,0 +1,42 @@
+{
+  "name": "@magic-ext/react-native-bare-oauth",
+  "version": "25.19.0",
+  "description": "Magic SDK OAuth Extension for Bare React Native environments.",
+  "author": "Magic <team@magic.link> (https://magic.link/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magiclabs/magic-js"
+  },
+  "files": [
+    "dist"
+  ],
+  "target": "node",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "import": "./dist/es/index.mjs",
+    "types": "./dist/types/index.d.ts",
+    "require": "./dist/cjs/index.js"
+  },
+  "externals": {
+    "include": [
+      "@magic-sdk/react-native-bare"
+    ]
+  },
+  "dependencies": {
+    "crypto-js": "^3.3.0",
+    "react-native-device-info": "^10.3.0"
+  },
+  "devDependencies": {
+    "@magic-sdk/react-native-bare": "^29.19.0",
+    "@magic-sdk/types": "^24.16.0",
+    "@types/crypto-js": "~3.1.47",
+    "react-native-inappbrowser-reborn": "^3.7.0"
+  },
+  "peerDependencies": {
+    "@magic-sdk/react-native-bare": ">=13.0.0",
+    "react-native-inappbrowser-reborn": ">=3.7.0"
+  }
+}

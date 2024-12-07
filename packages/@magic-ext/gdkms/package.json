@@ -1,0 +1,36 @@
+{
+  "name": "@magic-ext/gdkms",
+  "version": "11.18.0",
+  "description": "G-DKMS extension",
+  "author": "Magic <team@magic.link> (https://magic.link/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magiclabs/magic-js"
+  },
+  "files": [
+    "dist"
+  ],
+  "target": "neutral",
+  "cdnGlobalName": "MagicGDKMSExtension",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/index.d.ts",
+  "jsdelivr": "./dist/extension.js",
+  "exports": {
+    "import": "./dist/es/index.mjs",
+    "types": "./dist/types/index.d.ts",
+    "require": "./dist/cjs/index.js"
+  },
+  "externals": {
+    "include": [
+      "@magic-sdk/commons",
+      "@magic-sdk/types"
+    ]
+  },
+  "devDependencies": {
+    "@magic-sdk/commons": "^24.18.0",
+    "@magic-sdk/types": "^24.16.0",
+    "@peculiar/webcrypto": "^1.4.3"
+  }
+}
